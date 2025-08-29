@@ -9,41 +9,41 @@ body {
 }
 
 body {
-  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Noto Sans";
+  font-family: system-ui, Helvetica, Arial, "Noto Sans";
   line-height: 1.6;
   color: #222;
-  background: #fafafa;
+  background: rgb(246, 246, 246);
 }
 
 .container {
   width: min(1100px, 92vw);
   margin-inline: auto;
-  padding: 1rem;
+  padding: 1em;
 }
 
 .site-header {
-  padding-top: 2.5rem;
+  padding-top: 2.5em;
 }
 
 .site-header h1 {
   text-align: center;
-  font-size: clamp(1.8rem, 3vw + 1rem, 3rem);
-  margin: 0 0 1rem 0;
+  font-size: clamp(1.8em, 3vw + 1em, 3em);
+  margin: 0 0 1em 0;
   font-weight: 800;
 }
 
 .actions {
   display: flex;
   flex-wrap: wrap;
-  gap: .5rem;
+  gap: .5em;
   justify-content: center;
-  margin-bottom: 1.25rem;
+  margin-bottom: 1.25em;
 }
 
 .btn {
-  padding: .55rem .85rem;
+  padding: .55em .85em;
   border: 1px solid #d0d0d0;
-  border-radius: .75rem;
+  border-radius: .75em;
   background: white;
   cursor: pointer;
   box-shadow: 0 1px 2px rgba(0, 0, 0, .04);
@@ -61,25 +61,32 @@ body {
 .two-col {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  gap: 2rem;
+  gap: 2em;
   align-items: start;
 }
 
 .two-col h2 {
   margin-top: 0;
-  font-size: 1.25rem;
+  font-size: 1.25em;
+}
+
+.left {
+  background: #fff;
+  border-radius: .75em;
+  padding: 1em;
+  margin-bottom: 2em;
 }
 
 .left ul {
-  padding-left: 1.2rem;
+  padding-left: 1.2em;
 }
 
 .left li+li {
-  margin-top: .35rem;
+  margin-top: .35em;
 }
 
 .image-holder {
-  margin-top: 1rem;
+  margin-top: 1em;
   display: grid;
   place-items: center;
   min-height: 80px;
@@ -89,20 +96,25 @@ body {
   max-width: 100%;
   height: auto;
   border: 1px dashed #c9c9c9;
-  border-radius: .75rem;
-  padding: .75rem;
-  border-radius: .5rem;
+  border-radius: .75em;
+  padding: .75em;
+  border-radius: .5em;
 }
 
-#descripcion {
+.box {
   background: #fff;
-  border-radius: .75rem;
-  padding: 1rem;
-  margin-bottom: 2rem;
+  border-radius: .75em;
+  padding: 1em;
+  margin-bottom: 2em;
 }
 
-#descripcion h2 {
+#descripcion h2,
+#contenido h2 {
   margin-top: 0;
+}
+
+#descripcion.color-alt {
+  background: #f7fbff;
 }
 
 #descripcion.color-alt h2 {
@@ -113,19 +125,26 @@ body {
   color: #444;
 }
 
-#descripcion.color-alt {
-  background: #f7fbff;
-}
-
 .content-columns {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 2rem;
+  gap: 2em;
   text-align: justify;
 }
 
 .content-columns p {
-  margin: 0 0 1rem 0;
+  margin: 0 0 0 0;
+}
+
+.contenido-header {
+  grid-column: 1 / -1;
+  text-align: left;
+  margin-bottom: 0em;
+}
+
+.contenido-header h2 {
+  margin: 0 0 .5em 0;
+  font-size: 1.5em;
 }
 
 .content-columns.stacked {
@@ -134,7 +153,7 @@ body {
 
 .site-footer {
   text-align: center;
-  padding: 2rem 1rem 3rem;
+  padding: 2em 1em 3em;
   color: #666;
 }
 
